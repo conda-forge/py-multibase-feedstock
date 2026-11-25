@@ -1,13 +1,13 @@
 {% set name = "py-multibase" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 58c1a264195fa1ae29ea707c6fc8196446f4bdb92e0f9a0f131e0f280b238839
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 645541b8139913ef18cd5576aeaeeca7e142fc937e82359122ff95c3f2e16bdc
 
 build:
   noarch: python
@@ -23,7 +23,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - python-baseconv >=1.2.0,<2.0
-    - six >=1.10.0,<2.0
     - morphys >=1.0,<2.0
 
 test:
