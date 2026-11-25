@@ -23,7 +23,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - python-baseconv >=1.2.0,<2.0
-    - six >=1.10.0,<2.0
     - morphys >=1.0,<2.0
 
 test:
